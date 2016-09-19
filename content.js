@@ -13,7 +13,7 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
     var da = {};
     var total = 0.0;
 
-    debugger; 
+    //debugger; 
 
     for (var i = 0; i < rs.length; i++) {
       h = getHero(rs[i]);
