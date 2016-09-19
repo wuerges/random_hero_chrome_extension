@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
+  "name":    "Test Extension",
+  "version": "0.0",
 
-  "name": "GTmetrix Analyzer Plugin",
-  "description": "This extension will analyze a page using GTmetrix",
-  "version": "1.0",
-
-  "browser_action": {
-   "default_icon": "icon.png",
-   "default_popup": "popup.html"
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
   },
-  "permissions": [
-   "activeTab"
-   ]
+  "content_scripts": [{
+    "matches": ["http://www.dotabuff.com/players/*/heroes"],
+    "js":      ["content.js"]
+  }],
+  "browser_action": {
+    "default_title": "Test Extension"
+  },
+
+  "permissions": ["activeTab"]
 }

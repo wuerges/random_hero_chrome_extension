@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   var checkPageButton = document.getElementById('checkPage');
 
   checkPageButton.addEventListener('click', function() {
-    var rs = document.getElementsByTagName('tbody');
+    var rs = document.getElementsByTagName('tbody')[0];
+    window.alert("haha " + rs);
     var rs = $('tbody').children();
 
     var d = {};
@@ -34,3 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+*/
